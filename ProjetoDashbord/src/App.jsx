@@ -1,10 +1,10 @@
-import Grafico from "../components/Grafico"
+import Login from "../components/Login"
 function App() {
 
 
   return (
     <>
-      <Grafico/>
+      <Login/>
     </>
   )
 }
