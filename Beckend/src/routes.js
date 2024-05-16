@@ -13,15 +13,15 @@ let users =[
         id: 1,
         name: 'Anselmo',
         email: 'Anselmo@gmail.com',
-        password: '240206',
-        page:'/home',
+        senha: '240206',
+        page:'/Grafico',
       },
       {
         id: 2,
-        name: 'Bruno',
-        email: 'Brunobandeira@gmail.com',
-        password: '123456',
-        page:'/home',
+        name: 'Cezar',
+        email: 'Cezar@gmail.com',
+        senha: '123456',
+        page:'/Grafico',
       },
 ]
 
