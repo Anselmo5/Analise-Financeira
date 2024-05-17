@@ -3,20 +3,19 @@ import './Login.css'
 import {Link,useNavigate} from 'react-router-dom'
 import Swal from 'sweetalert2'
 import axios from 'axios'
-import { useState,useEffect } from 'react'
+import { useState} from 'react'
 
 const Login = () => {
 
   const [email, setEmail] = useState('')
-  const [senha, setSenha] = useState('')
-  const [user, setUser] = useState(null);
-  const [error, setError] = useState('');
+  const [password, setPassword] = useState('')
+  const [user, setUser] = useState(null);;
   const navigate = useNavigate()
 
-   const handlesubmit = async (e) => {
+    const handlesubmit = async (e) => {
     e.preventDefault();
 
-      if(!email || !senha){
+      if(!email || !password){
         Swal.fire({
           title: "Erro no envio!",
           text: "Preencha todos os campos",
@@ -27,16 +26,16 @@ const Login = () => {
 
       try {
         const response = await axios.post(
-          'http://localhost:5173/grafico',
-          JSON.stringify({ email,senha}),
+          'http://localhost:3003/Login',
+          JSON.stringify({email,password}),
           {
             headers: { 'Content-Type': 'application/json'},
           }
-        )
+        );
 
           setUser(response.data.user)
-          navigate(response.data.redirect)
-
+          navigate(response.data.redirect);
+          console.log(response.data);
       } catch (error) {
         if (!error?.response) {
           Swal.fire({
@@ -66,7 +65,7 @@ const Login = () => {
                             <input 
                               type="email" 
                               placeholder='Ex: Maria@gmail.com' 
-                              onChange={(event) => setEmail(event.target.value)}
+                              onChange={(e) => setEmail(e.target.value)}
                               />
                         </div>
                         <div className='group'>
@@ -74,11 +73,11 @@ const Login = () => {
                             <input 
                               type="password" 
                               placeholder='Digite sua senha' 
-                              onChange={(event) => setSenha(event.target.value)}
+                              onChange={(e) => setPassword(e.target.value)}
                               required 
                               />
                         </div>
-                      <button onClick={(event) => handlesubmit(event)}>Entrar</button>
+                      <button onClick={(e) => handlesubmit(e)}>Entrar</button>
                      </div>
                 </div>
           </div>

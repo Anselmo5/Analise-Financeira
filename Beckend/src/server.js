@@ -9,7 +9,7 @@ app.use(cors())
 app.use(router)
 
 app.get('/', (req,res) => { //Primeira rota feita
-   res.send('Hello')
+   res.send('Hello Dev')
 })
 
 app.listen(3003, () => {

@@ -13,20 +13,20 @@ let users =[
         id: 1,
         name: 'Anselmo',
         email: 'Anselmo@gmail.com',
-        senha: '240206',
-        page:'/Grafico',
+        password:'240206',
+        page:'/grafico',
       },
       {
         id: 2,
         name: 'Cezar',
         email: 'Cezar@gmail.com',
-        senha: '123456',
-        page:'/Grafico',
+        password: '123456',
+        page:'/grafico',
       },
 ]
 
 
-router.post('/login', (req, res) => {
+router.post('/Login', (req, res) => {
     const { email, password } = req.body;
     const user = users.find((user) => user.email === email && user.password === password);
   
@@ -51,7 +51,7 @@ router.post('/login', (req, res) => {
       name: nome,
       email: email,
       password: senha,
-      page:'/home',
+      page:'/grafico',
     };
   
     users.push(newUser);
