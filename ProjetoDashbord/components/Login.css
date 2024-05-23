@@ -9,11 +9,12 @@
 
 
 .container{
-  margin-top:24vh;
+  margin-top:17vh;
   background: #242424;
-  width: 30vw;
-  height:52vh;
-  border-radius: 5px
+  width: 35vw;
+  height:70vh;
+  border-radius: 5px;
+
 }
 
 .user{
@@ -22,7 +23,7 @@
     align-items: center;
     height: 100%;
     width: 100%;
-
+    
     /* Usando grid:
 
             display: grid;
@@ -104,7 +105,7 @@
     left: 0;
     border-width: 0 0 35vh 100vw;
     border-style: solid;
-    border-color: transparent transparent rgb(19, 19, 19) transparent;
+    border-color: transparent transparent #242424 transparent;
 }
 
 .efectlogin2{
@@ -114,7 +115,7 @@
     left: 0;
     border-width: 35vh 100vw 0 0;
     border-style: solid;
-    border-color: rgb(19, 19, 19) transparent transparent transparent;
+    border-color: #242424 transparent transparent transparent;
 }
 
 
@@ -134,3 +135,10 @@
 .redirect a:hover{
     color: aqua;
 }
+
+
+@media screen and (max-width:1200px) {
+
+ 
+    
+}   

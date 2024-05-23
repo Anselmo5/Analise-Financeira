@@ -5,7 +5,7 @@
     left: 0;
     border-width: 0 0 30vh 100vw;
     border-style: solid;
-    border-color: transparent transparent rgb(19, 19, 19) transparent;
+    border-color: transparent transparent #242424 transparent;
 }
 
 .efectcadastro2{
@@ -15,5 +15,5 @@
     left: 0;
     border-width: 35vh 100vw 0 0;
     border-style: solid;
-    border-color: rgb(19, 19, 19) transparent transparent transparent;
+    border-color: #242424 transparent transparent transparent;
 }
