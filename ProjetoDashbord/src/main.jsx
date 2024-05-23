@@ -11,6 +11,8 @@ import {
 
 import App from './App.jsx'
 import Grafico from '../components/Grafico';
+import Login from '../components/Login';
+import Cadastro from '../components/Cadastro';
 
 
 
@@ -24,6 +26,17 @@ const router = createBrowserRouter([
     path: "grafico",
     element: <Grafico/>,
   },
+
+  {
+    path:"login",
+    element:<Login/>
+  },
+
+  {
+    path:"cadastro",
+    element:<Cadastro/>
+  }
+
 
 ]);
 

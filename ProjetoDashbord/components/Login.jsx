@@ -57,9 +57,11 @@ const Login = () => {
     <div>
       <div className='aling'>
           <div className='container'>
+            <div className="efectlogin1"></div>
                 <div className='user'>
                      <div className='form'>
                            {/* logo */}
+                           <h2>Faça Login</h2>
                         <div className='group'>
                             <label>Email</label>
                             <input 
@@ -78,7 +80,12 @@ const Login = () => {
                               />
                         </div>
                       <button onClick={(e) => handlesubmit(e)}>Entrar</button>
+                        <div className='redirect'>
+                            <Link to="/">to go back</Link>
+                            <Link to='/cadastro'>Sign Up</Link>
+                        </div>
                      </div>
+                    <div className="efectlogin2"></div>
                 </div>
           </div>
       </div>

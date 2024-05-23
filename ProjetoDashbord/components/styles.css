@@ -25,7 +25,7 @@ header{
 }
 
 header .Text{
-    margin-top: 152px;
+    margin-top: 65px;
 }
 
 header .titulo{
@@ -299,7 +299,7 @@ footer{
 
 
 
-form {
+form{
     display: flex;
     width: 100%;
     justify-content: space-between;
@@ -307,8 +307,8 @@ form {
     margin: auto;
 }
 
-input[type="text"],
-input[type="email"] {
+.footer input[type="text"],
+.footer input[type="email"] {
     display: inline-block;
     width: 48%;
     padding: 13px;
@@ -317,13 +317,13 @@ input[type="email"] {
     font-family: 'Open Sans', sans-serif;
     background: rgba(37, 37, 33, 0.7);
     margin-bottom: 16px;
-    border-top: 5px solid rgba(37, 37, 33, 0.7);
+    border-bottom: 5px solid rgba(37, 37, 33, 0.7);
 }
 
-input[type="text"]:focus,
-input[type="email"]:focus,
-textarea:focus {
-    border-top: 5px solid rgba(255, 255, 255, 0.7);
+.footer input[type="text"]:focus,
+.footer input[type="email"]:focus,
+.footer textarea:focus {
+    border-bottom: 5px solid rgba(255, 255, 255, 0.7);
 }
 
 textarea {
@@ -341,14 +341,46 @@ textarea {
     margin-bottom: 16px;
 }
 
-input[type="submit"] {
+.footer input[type="submit"] {
     display: inline-block;
     padding: 13px;
     border: none;
     color: #fff;
     background: rgba(37, 37, 33, 0.7);
     width: 96px;
+    transition: 1s all;
 }
+
+.footer input[type="submit"]:hover{
+    background: #fff;
+    color: #3A373D;
+}
+
+/* Navegação */
+
+
+.aling{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+}
+
+.aling a{
+    padding: 10px;
+    margin-top: 10px;
+    margin: 10px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    text-align: center;
+    transition: 1s all;
+}
+
+.aling a:hover{
+    color:aqua;
+}
+
 
 /* Responsive */
 

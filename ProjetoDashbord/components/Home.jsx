@@ -1,5 +1,6 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
+import { HashLink } from 'react-router-hash-link';
 
 // estilo do site
 import './styles.css'
@@ -19,10 +20,17 @@ const Home = () => {
   return (
     <div>
          <header style={{backgroundImage:`url(${fundo1})`}}>
+                <div className="aling">
+                    <Link to="/login">Login</Link>
+                    <HashLink smooth to="#sobre">Sobre</HashLink>
+                    <HashLink smooth to="#contato">Contato</HashLink>
+                    <HashLink smooth to="#equipe">Equipe</HashLink>
+                </div>
+                
                 <div className="Text">
                     <h1 className='titulo'>Grafico Financeiro</h1>
                     <h3 className='subtitulo'>Conheça nossa empressa</h3>
-                    <Link to='' className='btn'>Sobre</Link>
+                    <HashLink smooth to='#sobre' className='btn'>Sobre</HashLink>
                 </div>
                 <div className="efect1"></div>
          </header>
@@ -30,13 +38,13 @@ const Home = () => {
 
 
          <main>
-                <section className="aprt">
+                <section className="aprt" id='sobre'>
                     <div className="containe">
                             <h2 className="sobre">Sobre Nossa Empressa</h2>
                             <h3 className="slogan">Virtualizando seu Dinheiro</h3>
                             <p className="prf">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis ipsa, ipsum ea eveniet possimus minus error nulla et nihil sit harum numquam ipsam excepturi tenetur laborum minima, perspiciatis iusto! Reprehenderit, eveniet voluptas. Quae eius reprehenderit quasi a voluptatem facilis pariatur iste eum, non laborum itaque, vitae nihil. Quam, doloribus reprehenderit?</p>
                             <p className="prf">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat id rem quod distinctio animi laboriosam perspiciatis totam tempora magni laudantium, culpa non consequuntur assumenda odit fugit quasi officia iure repellendus rerum nisi minus pariatur. Quaerat explicabo saepe dolorum, quos aliquam sunt numquam adipisci ipsa ad accusantium ipsum ipsam soluta accusamus.</p>
-                            <Link to='' className='btn'>Increva-se</Link>
+                            <Link to='/login' className='btn'>Increva-se</Link>
                     </div>
                 </section>
 
@@ -70,7 +78,7 @@ const Home = () => {
                 </section>
 
                 {/* Membros da equipe */}
-                <section className="membros">
+                <section className="membros" id='equipe'>
                     <div className="containe">
                         <h2 className="sbrequipe">Membros da Equipe</h2>
                         <h3 className="slogan">Conheça a nossa equipe</h3>
@@ -83,13 +91,13 @@ const Home = () => {
                             </div>
 
                             <div className="card">
-                                <img src={Avatar2} alt="" />
+                                <img src={Avatar3} alt="" />
                                 <h4>Cezar -Database</h4>
                                 <p>Responsavel pela criação do banco de dados</p>
                             </div>
 
                             <div className="card">
-                                <img src={Avatar3} alt="" />
+                                <img src={Avatar2} alt="" />
                                 <h4>Henrique - Backend</h4>
                                 <p>Responsavel pela parte funcional do site</p>
                             </div>
@@ -106,7 +114,7 @@ const Home = () => {
             </section>
          </main>
 
-        <footer>
+        <footer id='contato'>
             <div className="containe">
                 <h2 className="titulofooter">Entre em contado com nosco</h2>
                 <h3 className="subtitulofooter">Nos de seu feedback</h3>

@@ -1,0 +1,19 @@
+.efectcadastro1{
+    z-index: 10;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-width: 0 0 30vh 100vw;
+    border-style: solid;
+    border-color: transparent transparent rgb(19, 19, 19) transparent;
+}
+
+.efectcadastro2{
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-width: 35vh 100vw 0 0;
+    border-style: solid;
+    border-color: rgb(19, 19, 19) transparent transparent transparent;
+}

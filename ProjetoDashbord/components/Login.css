@@ -1,3 +1,5 @@
+
+
 .aling{
     display: flex;
     justify-content: center;
@@ -7,9 +9,11 @@
 
 
 .container{
-    background-color: #FBA728;
-    width: 100vw;
-    height: 100vh;
+  margin-top:24vh;
+  background: #242424;
+  width: 30vw;
+  height:52vh;
+  border-radius: 5px
 }
 
 .user{
@@ -50,7 +54,6 @@
 
 
 .user button:hover{
-    transform: translate(90px);
     background-color: #fff;
     border: 1px solid #242424;
     color: #242424;
@@ -63,6 +66,12 @@
     padding: 10px;
 }
 
+.form h2{
+    color: #fff;
+    margin: 10px;
+    
+}
+
 .form label{
     color: #fff;
     margin-bottom: 8px;
@@ -72,4 +81,56 @@
     display: flex;
     align-items: flex-start;
     flex-direction: column;
+}
+
+.group input[type="email"],
+.group input[type="password"]{
+    display: inline-block;
+    padding: 13px;
+    border: none;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    background: rgb(255, 255, 255);
+    margin-bottom: 16px;
+    border-bottom: 5px solid rgba(37, 37, 33, 0.7);
+}
+
+
+
+.efectlogin1{
+    z-index: 10;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-width: 0 0 35vh 100vw;
+    border-style: solid;
+    border-color: transparent transparent rgb(19, 19, 19) transparent;
+}
+
+.efectlogin2{
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-width: 35vh 100vw 0 0;
+    border-style: solid;
+    border-color: rgb(19, 19, 19) transparent transparent transparent;
+}
+
+
+.redirect{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+
+.redirect a{
+    color: #fff;
+    text-decoration: none;
+    transition: 1s all;
+}
+.redirect a:hover{
+    color: aqua;
 }
