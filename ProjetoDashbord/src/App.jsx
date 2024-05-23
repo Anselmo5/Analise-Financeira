@@ -4,7 +4,6 @@ import Home from "../components/Home"
 import Grafico from "../components/Grafico"
 import Login from "../components/Login"
 import Cadastro from "../components/Cadastro"
-import fundo1 from './assets/fundo1.jpg'
 
 function App() {
   const location = useLocation()

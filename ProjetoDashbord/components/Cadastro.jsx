@@ -1,8 +1,7 @@
 import React from 'react'
 import './Cadastro.css'
 import { Link } from 'react-router-dom'
-import { HashLink } from 'react-router-hash-link';
-import {motion} from 'framer-motion'
+
 const Cadastro = () => {
   return (
     <div>

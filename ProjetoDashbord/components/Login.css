@@ -9,10 +9,10 @@
 
 
 .container{
-  margin-top:17vh;
+  margin-top:25vh;
   background: #242424;
-  width: 35vw;
-  height:70vh;
+  width: 30vw;
+  height:50vh;
   border-radius: 5px;
 
 }
@@ -85,7 +85,8 @@
 }
 
 .group input[type="email"],
-.group input[type="password"]{
+.group input[type="password"],
+.group input[type="text"]{
     display: inline-block;
     padding: 13px;
     border: none;
@@ -139,6 +140,43 @@
 
 @media screen and (max-width:1200px) {
 
- 
+ .container{
+    padding: 5px;
+    width: 45vw;
+    height: 60vh;
+    padding: 10px;
+ }
+
+ .efectlogin1{
+    z-index: none;
+    position: none;
+    bottom: 0;
+    left: 0;
+    border-width: none;
+    border-style: none;
+    border-color: none;
+ }
+
+ .efectlogin2{
+    z-index:none;
+    position:none;
+    top: 0;
+    left: 0;
+    border-width: none;
+    border-style: none;
+    border-color: none;
+ }
+
+ .group input{
+    width: 25vw;
+ }
     
 }   
+
+
+
+@media screen and (max-width:600px) {
+    .container{
+        width: 60vw;
+    }
+}

@@ -17,3 +17,35 @@
     border-style: solid;
     border-color: #242424 transparent transparent transparent;
 }
+
+
+
+@media screen and (max-width:1200px) {
+
+    .container{
+       padding: 5px;
+       width: 40vw;
+       height: 50vh;
+    }
+   
+    .efectcadastro1{
+       z-index: none;
+       position: none;
+       bottom: 0;
+       left: 0;
+       border-width: none;
+       border-style: none;
+       border-color: none;
+    }
+   
+    .efectcadastro2{
+       z-index:none;
+       position:none;
+       top: 0;
+       left: 0;
+       border-width: none;
+       border-style: none;
+       border-color: none;
+    }
+       
+   }   
