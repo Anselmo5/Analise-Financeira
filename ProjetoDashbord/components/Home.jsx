@@ -124,11 +124,15 @@ const Home = () => {
                 <h2 className="titulofooter">Entre em contado com nosco</h2>
                 <h3 className="subtitulofooter">Nos de seu feedback</h3>
                 <div className="footer">
-                    <form action="">
+                    <form action="https://formsubmit.co/anselmohenrique191@gmail.com" method="POST">
                         <input type="text" placeholder='Nome'/>
                         <input type="email" placeholder='Email'/>
-                        <textarea name="" id="" cols="30" rows="10px"></textarea>
+                        <textarea name="message" id="" cols="30" rows="10px" ></textarea>
                         <input type="submit" value="Enviar" />
+
+                        <input type="hidden" name='_subject' value="Mensagem Grafico Financeiro"/>
+                        <input type="text" name='_honey' style={{display:'none'}}/>
+                        <input type="hidden" name='_captcha' value="false"/>
                     </form>
                 </div>
             </div>
