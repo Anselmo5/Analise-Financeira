@@ -1,6 +1,8 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 import { HashLink } from 'react-router-hash-link';
+import {motion} from 'framer-motion'
+import { Routes,Route,useLocation } from "react-router-dom"
 
 // estilo do site
 import './styles.css'
@@ -18,7 +20,10 @@ import Avatar3 from '../src/assets/Avatar3.jpg'
 
 const Home = () => {
   return (
-    <div>
+
+<div>
+
+
          <header style={{backgroundImage:`url(${fundo1})`}}>
                 <div className="aling">
                     <Link to="/login">Login</Link>
@@ -128,7 +133,7 @@ const Home = () => {
                 </div>
             </div>
         </footer>
-    </div>
+     </div>
   )
 }
 

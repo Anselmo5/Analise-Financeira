@@ -4,6 +4,7 @@ import {Link,useNavigate} from 'react-router-dom'
 import Swal from 'sweetalert2'
 import axios from 'axios'
 import { useState} from 'react'
+import {motion} from 'framer-motion'
 
 const Login = () => {
 
@@ -54,7 +55,7 @@ const Login = () => {
    }
 
   return (
-    <div>
+ <div>
       <div className='aling'>
           <div className='container'>
             <div className="efectlogin1"></div>
