@@ -12,8 +12,8 @@ function App() {
     <>
       <AnimatePresence exitBeforeEntrer>
           <Routes location={location} key={location.pathname}>
-              <Route path="/" element={<PageTrasition><Grafico/></PageTrasition>}/>
-              <Route path="/grafico" element={<PageTrasition><Home/></PageTrasition>}/>
+              <Route path="/" element={<PageTrasition><Home/></PageTrasition>}/>
+              <Route path="/grafico" element={<PageTrasition><Grafico/></PageTrasition>}/>
               <Route path="/login" element={<PageTrasition><Login/></PageTrasition>}/>
               <Route path="/cadastro" element={<PageTrasition><Cadastro/></PageTrasition>}/>
           </Routes>
@@ -23,6 +23,7 @@ function App() {
 };
 
 const PageTrasition = ({children}) =>{
+  
  return(
   <motion.div
     style={{backgroundColor:'#fff'}}
