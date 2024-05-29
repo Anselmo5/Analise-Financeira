@@ -1,11 +1,36 @@
 import React from 'react'
 import styled from 'styled-components'
-const History = () => {
-  return (
-    <div>
-      
-    </div>
-  )
+import avatarImage from '../src/assets/fundo1.jpg';
+
+function History() {
+    return (
+        <Section>
+        <div className="orders">
+      <div className="orders__details">
+          <div>
+                <h4>History</h4> 
+              
+          </div>
+          <div> 
+          <h6>Transection of last months</h6> 
+            
+          </div>
+        </div>
+        <div className="orders__table">
+            <table>
+            <tr>
+              <td><img src={avatarImage} alt="" /></td>
+              <td >Car Insurance</td>
+              <td>14:10:32 AM</td>
+              <td>$350.00</td>
+              <td >Complete</td>
+            </tr>
+            
+            </table>
+        </div>
+        </div>
+        </Section>
+    )
 }
 
 export default History

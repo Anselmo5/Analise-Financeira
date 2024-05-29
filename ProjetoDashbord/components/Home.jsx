@@ -124,7 +124,7 @@ const Home = () => {
                 <h2 className="titulofooter">Entre em contado com nosco</h2>
                 <h3 className="subtitulofooter">Nos de seu feedback</h3>
                 <div className="footer">
-                    <form action="https://formsubmit.co/anselmohenrique191@gmail.com" method="POST">
+                    <form action="https://formsubmit.co/anselmo_reis@estudante.sesisenai.org.br.com" method="POST">
                         <input type="text" placeholder='Nome'/>
                         <input type="email" placeholder='Email'/>
                         <textarea name="message" id="" cols="30" rows="10px" ></textarea>
