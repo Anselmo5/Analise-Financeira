@@ -1,9 +1,29 @@
 import React from 'react'
 import styled from 'styled-components'
 import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+import { Chart } from "react-google-charts";
+
+
+
+export const data2 = [
+  ["Year", "Sales", "Expenses", "Profit"],
+  ["2014", 1000, 400, 200],
+  ["2015", 1170, 460, 250],
+  ["2016", 660, 1120, 300],
+  ["2017", 1030, 540, 350],
+];
+
+export const options = {
+  chart: {
+    title: "Company Performance",
+    subtitle: "Sales, Expenses, and Profit: 2014-2017",    
+  },
+};
+
+
 const Balance = () => {
   return (
-    
+  
     <Section>
             <div className="sales">
                 <div className="sales__details">
@@ -33,12 +53,23 @@ const Balance = () => {
                         <YAxis />
                         <Tooltip />
                         <Legend />
-                        <Bar dataKey="pv" stackId="a" fill="#14121F" />
-                        <Bar dataKey="uv" stackId="a" fill="#E5E5F1" />
+                        <Bar dataKey="pv" stackId="a" fill="#272727" />
+                        <Bar dataKey="uv" stackId="a" fill="#555555" />
                      </BarChart>
                     </ResponsiveContainer>
                 </div>
             </div>
+
+
+
+              <Chart
+                chartType="Bar"
+                data={data2}
+                width="72vw"
+                height="400px"
+                options={options}
+              />
+
         </Section>
     )
 }
@@ -115,10 +146,12 @@ const data = [
 
   ];
 
+  
+
 const Section = styled.section`
 .sales{
     color: black;
-    width: 100%;
+    width: 100 %;
     .sales__details {
         display: flex;
         justify-content: space-between;
@@ -133,11 +166,11 @@ const Section = styled.section`
     }
     .sales__graph{
         height: 10rem;
-        width: 100%;
+        width: 73vw;
         .recharts-default-tooltip {
-            background-color: black !important;
-            border-color: black !important;
-            color: white !important;
+            background-color: white !important;
+            border-color: white !important;
+            color: bla !important;
         }
     }
 }

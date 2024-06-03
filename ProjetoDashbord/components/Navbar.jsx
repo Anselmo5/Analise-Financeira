@@ -7,7 +7,7 @@ function Navbar() {
     <Nav1>
       <div className="navbar-title">
         <h1>Dashboard</h1>
-        <h5>Payment updates</h5>
+        <h5>Atualizações de pagamento</h5>
       </div>
       <div className="navbar-search">
         <BiSearch />
@@ -26,13 +26,15 @@ const Nav1 = styled.nav`
   color: black;
   padding: 1rem; /* Adicionado para espaçamento interno */
   background-color: #f0f0f0; /* Adicionado para um fundo diferente */
+  width:72vw;
+  border-radius:5px;
 
   .navbar-title {
-    h1 {
+    h1{
       margin: 0; /* Adicionado para remover margem padrão */
     }
 
-    h5 {
+    h5{
       color: grey;
       margin: 0; /* Adicionado para remover margem padrão */
     }
@@ -47,15 +49,18 @@ const Nav1 = styled.nav`
     border-radius: 1.5rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adicionado para sombra */
 
+  }
     svg {
       color: grey;
     }
 
-    .navbar-search input {
+    .navbar-search input{
       background-color: transparent;
       border: none;
       color: grey;
       font-size: 1rem; /* Adicionado para tamanho de fonte */
+      border:none;
+
       &:focus {
         outline: none;
       }

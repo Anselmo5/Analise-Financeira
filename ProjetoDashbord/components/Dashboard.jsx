@@ -3,14 +3,12 @@ import styled from 'styled-components';
 import Navbar from './Navbar';
 import Balance from './Balance';
 import Analytic from './Analytic';
-import History from './History';
 const Dashboard = () => {
   return (
     <Section>
         <Navbar/>
         <Analytic/>
         <Balance/>
-        <History/>
     </Section>
   )
 }

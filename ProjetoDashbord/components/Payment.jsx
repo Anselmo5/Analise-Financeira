@@ -6,8 +6,8 @@ const Payment = () => {
   return (
     <Section>
       <div className="payment-title">
-        <h4>Upcoming Payments</h4>
-        <h6>24 May 2024</h6>
+        <h4>Próximos Pagamentos</h4>
+        <h6>24 jun 2024</h6>
       </div>
       <div className="payment-analytic">
         <div className="payment-design">
@@ -15,22 +15,22 @@ const Payment = () => {
             <BiHomeAlt />
           </div>
           <div className="payment-content">
-            <h5>Home Rent</h5>
-            <h5 className="payment-color">Pending</h5>
+            <h5>Aluguel de casa</h5>
+            <h5 className="payment-color">Pendente</h5>
           </div>
-        </div>
+        </div>  
         <div className="payment-money">
           <h5>$1500</h5>
         </div>
-      </div>
+      </div>  
       <div className="payment-analytic">
         <div className="payment-design">
           <div className="payment-log">
             <BiCar />
           </div>
           <div className="payment-content">
-            <h5>Car Insurance</h5>
-            <h5 className="payment-color">Pending</h5>
+            <h5>Seguro de automóvel</h5>
+            <h5 className="payment-color">Pendente</h5>
           </div>
         </div>
         <div className="payment-money">
@@ -70,15 +70,23 @@ const Section = styled.section`
     background-color: #f9f9f9;
     border-radius: 0.5rem;
     margin: 0.5rem 0;
+  }
 
-    &:hover {
-      background-color: #F5F5FD;
-      color: black;
 
-      svg {
-        color: black;
-      }
-    }
+.payment-analytic:hover{
+  background:#22202B;
+  color:#fff;
+} 
+
+
+&:hover {
+  background-color: #F5F5FD;
+  color: black;
+}
+
+svg {
+  color: black;
+}
 
     .payment-design {
       display: flex;

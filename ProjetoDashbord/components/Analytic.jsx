@@ -12,15 +12,15 @@ const Analytic = () => {
       <div className="analytic-card">
         <div className="analytic-design">
           <div className="analytic-logo">
-            <BsCreditCard />
+            <BsCreditCard className='analytic-icon' />
           </div>
           <div className="analytic-action">
             <AiOutlineMore />
           </div>
         </div>
         <div className="analytic-transfer">
-          <h6>Transfer via</h6>
-          <h6>Card number</h6>
+          <h6>Transferência via</h6>
+          <h6>Número do cartão</h6>
         </div>
         <div className="analytic-money">
           <h5>$1500</h5>
@@ -30,15 +30,15 @@ const Analytic = () => {
       <div className="analytic-card">
         <div className="analytic-design">
           <div className="analytic-logo">
-            <BiTrashAlt />
+            <BiTrashAlt className='analytic-icon' />
           </div>
           <div className="analytic-action">
-            <AiOutlineMore />
+            <AiOutlineMore/>
           </div>
         </div>
         <div className="analytic-transfer">
-          <h6>Transfer via</h6>
-          <h6>Card number</h6>
+          <h6>Transferência via</h6>
+          <h6>Número do cartão</h6>
         </div>
         <div className="analytic-money">
           <h5>$1500</h5>
@@ -48,15 +48,15 @@ const Analytic = () => {
       <div className="analytic-card">
         <div className="analytic-design">
           <div className="analytic-logo">
-            <BsBank />
+            <BsBank className='analytic-icon'/>
           </div>
           <div className="analytic-action">
-            <AiOutlineMore />
+            <AiOutlineMore/>
           </div>
         </div>
         <div className="analytic-transfer">
-          <h6>Transfer via</h6>
-          <h6>Card number</h6>
+          <h6>Transferência via</h6>
+          <h6>Número do cartão</h6>
         </div>
         <div className="analytic-money">
           <h5>$1500</h5>
@@ -66,15 +66,15 @@ const Analytic = () => {
       <div className="analytic-card">
         <div className="analytic-design">
           <div className="analytic-logo">
-            <GiTakeMyMoney />
+            <GiTakeMyMoney className='analytic-icon' />
           </div>
           <div className="analytic-action">
-            <AiOutlineMore />
+            <AiOutlineMore/>
           </div>
         </div>
         <div className="analytic-transfer">
-          <h6>Transfer via</h6>
-          <h6>Card number</h6>
+          <h6>Transferência via</h6>
+          <h6>Número do cartão</h6>
         </div>
         <div className="analytic-money">
           <h5>$1500</h5>
@@ -88,11 +88,11 @@ export default Analytic;
 
 const AnalyticSection = styled.section`
   display: flex;
-  justify-content: space-between;
+
   margin: 0 60px;
 
   .analytic-card {
-    padding: 1rem;
+    padding: 0.8rem;
     border-radius: 1rem;
     color: black;
     background-color: white;
@@ -100,23 +100,30 @@ const AnalyticSection = styled.section`
     align-items: center;
     transition: 0.5s ease-in-out;
     width: 170px;
+    margin: 1.2em;
+  }
+
+  .analytic-card:hover{
+    background:#22202B;
+  }
+
 
     .analytic-design {
       display: flex;
       align-items: center;
-
+    }
       .analytic-logo {
         background-color: white;
         display: flex;
         justify-content: center;
         align-items: center;
-
+      }
         svg {
           font-size: 2rem;
         }
-      }
+      
       .analytic-action {
-        margin-left: 0.5rem; /* Ajuste a margem esquerda */
+        margin-left: 0.5rem; 
         svg {
           font-size: 1.5rem;
         }

@@ -8,17 +8,17 @@ const Activity = () => {
   return (
     <Section>
       <div className='activity-title'>
-        <h4>Recent Activities</h4>
-        <h6>10 Jan 2022</h6>
+        <h4>Atividades recentes</h4>
+        <h6>6 Jul 2024</h6>
       </div>
       <div className="activity-analytic">
         <div className="activity-design">
           <div className="activity-logo">
             <MdOutlineWaterDrop />
-          </div>
+          </div>  
           <div className="activity-content">
-            <h5>Water Bill</h5>
-            <h6 className='activity-color'>Successfully</h6>
+            <h5>Conta de Água</h5>
+            <h6 className='activity-color'>Sucesso</h6>
           </div>
         </div>
         <div className="activity-money">
@@ -31,8 +31,8 @@ const Activity = () => {
             <GiPayMoney />
           </div>
           <div className="activity-content">
-            <h5>Income Salary</h5>
-            <h6 className='activity-color'>Received</h6>
+            <h5>Renda Salário</h5>
+            <h6 className='activity-color'>Recebido</h6>
           </div>
         </div>
         <div className="activity-money">
@@ -41,12 +41,12 @@ const Activity = () => {
       </div>
       <div className="activity-analytic">
         <div className="activity-design">
-          <div className="activity-logo">
+          <div className="activity-logo"> 
             <AiOutlineThunderbolt />
           </div>
           <div className="activity-content">
-            <h5>Electric Bill</h5>
-            <h6 className='activity-color'>Successfully</h6>
+            <h5>Conta de luz</h5>
+            <h6 className='activity-color'>Sucesso</h6>
           </div>
         </div>
         <div className="activity-money">
@@ -59,8 +59,8 @@ const Activity = () => {
             <AiOutlineWifi />
           </div>
           <div className="activity-content">
-            <h5>Internet Bill</h5>
-            <h6 className='activity-color'>Successfully</h6>
+            <h5>Conta da Internet</h5>
+            <h6 className='activity-color'>Sucesso</h6>
           </div>
         </div>
         <div className="activity-money">
@@ -100,9 +100,13 @@ const Section = styled.section`
     background-color: #f9f9f9;
     border-radius: 0.5rem;
     margin: 0.5rem 0;
+  }
 
+  .activity-analytic:hover{
+    background:#22202B;
+    color:#fff;
+  }
     &:hover {
-      background-color: #F5F5FD;
       color: black;
 
       svg {
@@ -114,7 +118,7 @@ const Section = styled.section`
       display: flex;
       align-items: center;
       gap: 1rem;
-
+    }
       .activity-logo {
         background-color: white;
         border-radius: 1rem;
@@ -123,11 +127,11 @@ const Section = styled.section`
         justify-content: center;
         align-items: center;
         padding: 0.5rem;
-
+      }
         svg {
           font-size: 1.5rem;
         }
-      }
+      
 
       .activity-content {
         display: flex;

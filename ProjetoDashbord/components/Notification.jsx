@@ -1,13 +1,15 @@
 import React from 'react';
 import styled from 'styled-components';
 import { AiOutlineCalendar, AiOutlineBell, AiOutlineCaretDown } from 'react-icons/ai';
-import avatarImage from '../src/assets/fundo1.jpg';
-
+import avatarImage from '../src/assets/Avatar1.jpg';
+import { AiOutlineLogin } from "react-icons/ai";
+import {Link} from 'react-router-dom'
 const Notification = () => {
   return (
     <Nav>
       <div className="notification">
         <div className="icons">
+          <Link to='/'> <AiOutlineLogin className='font_icon'/></Link>
           <AiOutlineCalendar className='font_icon' />
           <AiOutlineBell className='font_icon' />
         </div>
@@ -16,7 +18,7 @@ const Notification = () => {
         </div>
         <AiOutlineCaretDown className='font_icon' />
       </div>
-    </Nav>
+    </Nav>  
   );
 }
 

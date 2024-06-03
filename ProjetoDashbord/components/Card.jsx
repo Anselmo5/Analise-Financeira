@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { FcSimCardChip } from 'react-icons/fc';
+import master from '../src/assets/mastercard.png'
 
 const Card = () => {
   return (
@@ -13,8 +14,7 @@ const Card = () => {
           <h6>4562 1122 4595 7852</h6>
         </div>
         <div className="image">
-          {/* Adicione uma imagem real ou um placeholder */}
-          <img src="placeholder.jpg" alt="Card" />
+          <img src={master} alt="card" />
         </div>
         <div className="name">
           <h6>CARD HOLDER</h6>
@@ -64,16 +64,11 @@ const Section = styled.section`
       }
     }
 
-    .image {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      /* Ajustei a margem esquerda para centralizar a imagem */
-      margin: 0 auto; 
-      width: 2.5rem;
+    .image img{
+      width:2.5rem;
       height: 2.5rem;
-    }
-
+      margin-left:10rem;
+  }
     .name {
       display: flex;
       gap: 0.5rem;
