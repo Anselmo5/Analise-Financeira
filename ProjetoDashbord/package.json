@@ -22,7 +22,8 @@
     "recharts": "^2.12.7",
     "scrollreveal": "^4.0.9",
     "styled-components": "^6.1.11",
-    "sweetalert2": "^11.11.0"
+    "sweetalert2": "^11.11.0",
+    "swiper": "^11.1.4"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",

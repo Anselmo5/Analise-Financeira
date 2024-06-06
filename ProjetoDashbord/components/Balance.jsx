@@ -2,8 +2,10 @@ import React from 'react'
 import styled from 'styled-components'
 import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 import { Chart } from "react-google-charts";
-
-
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import { Pagination } from 'swiper/modules';
 
 export const data2 = [
   ["Year", "Sales", "Expenses", "Profit"],
@@ -62,13 +64,50 @@ const Balance = () => {
 
 
 
-              <Chart
-                chartType="Bar"
-                data={data2}
-                width="72vw"
-                height="400px"
-                options={options}
-              />
+             
+            <Swiper pagination={true} modules={[Pagination]} className="mySwiper">
+             <SwiperSlide className="slidgrafico">
+                <Chart
+                    chartType="Bar"
+                    data={data2}
+                    width="72vw"
+                    height="400px"
+                    options={options}
+                  />
+             </SwiperSlide>
+
+             <SwiperSlide className="slidgrafico">
+                <Chart
+                    chartType="Bar"
+                    data={data2}
+                    width="72vw"
+                    height="400px"
+                    options={options}
+                  />
+             </SwiperSlide>
+
+             <SwiperSlide className="slidgrafico">
+                <Chart
+                    chartType="Bar"
+                    data={data2}
+                    width="72vw"
+                    height="400px"
+                    options={options}
+                  />
+             </SwiperSlide>
+              
+             <SwiperSlide className="slidgrafico">
+                <Chart
+                    chartType="Bar"
+                    data={data2}
+                    width="72vw"
+                    height="400px"
+                    options={options}
+                  />
+             </SwiperSlide>
+
+
+           </Swiper>
 
         </Section>
     )
@@ -173,6 +212,36 @@ const Section = styled.section`
             color: bla !important;
         }
     }
+}
+
+.swiper {
+  width: 80%;
+  height: 100%;
+  margin-top:50px;
+  margin-left:0px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slidgrafico{
+  padding:5px;
+  margin:5px;
 }
 `;
 
