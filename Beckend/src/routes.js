@@ -9,15 +9,8 @@ router.use(bodyParser.json());
 const secretKey ='you-secret-key';
 
 let users =[
-    {
-        id: 1,
-        name: 'Anselmo',
-        email: 'Anselmo@gmail.com',
-        password:'240206',
-        page:'/grafico',
-      },
       {
-        id: 2,
+        id: 1,
         name: 'Cezar',
         email: 'Cezar@gmail.com',
         password: '123456',
