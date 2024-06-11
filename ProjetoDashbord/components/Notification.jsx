@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { AiOutlineCalendar, AiOutlineBell, AiOutlineCaretDown } from 'react-icons/ai';
-import avatarImage from '../src/assets/Avatar1.jpg';
+import avatarImage from '../src/assets/Avatar3.jpg';
 import { AiOutlineLogin } from "react-icons/ai";
 import {Link} from 'react-router-dom'
 const Notification = () => {
