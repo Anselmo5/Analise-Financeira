@@ -17,6 +17,7 @@ import fundo1 from '../src/assets/fundo1.jpg'
 import Avatar1 from '../src/assets/Avatar1.jpg'
 import Avatar2 from '../src/assets/Avatar2.jpg'
 import Avatar3 from '../src/assets/Avatar3.jpg'
+import Avatar4 from '../src/assets/Avatar4.jpg'
 
 const Home = () => {
   return (
@@ -105,6 +106,13 @@ const Home = () => {
                                 <img src={Avatar2} alt="" />
                                 <h4>Henrique - Backend</h4>
                                 <p>Responsavel pela parte funcional do site</p>
+                            </div>
+
+
+                            <div className="card">
+                                <img src={Avatar4} alt="" />
+                                <h4>Dudinha - Front End</h4>
+                                <p>Responsavel pela criação do websit</p>
                             </div>
                         </div>
                     </div>
