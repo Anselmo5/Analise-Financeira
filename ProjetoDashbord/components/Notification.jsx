@@ -9,14 +9,14 @@ const Notification = () => {
     <Nav>
       <div className="notification">
         <div className="icons">
-          <Link to='/'> <AiOutlineLogin className='font_icon'/></Link>
-          <AiOutlineCalendar className='font_icon' />
-          <AiOutlineBell className='font_icon' />
+          <Link to='/'> <AiOutlineLogin className='font_icon' color='white'/></Link>
+          <AiOutlineCalendar className='font_icon' color='white'/>
+          <AiOutlineBell className='font_icon' color='white'/>
         </div>
         <div className="image">
           <img src={avatarImage} alt="Avatar" />
         </div>
-        <AiOutlineCaretDown className='font_icon' />
+        <AiOutlineCaretDown className='font_icon' color='white'/>
       </div>
     </Nav>  
   );

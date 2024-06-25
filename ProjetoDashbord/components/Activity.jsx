@@ -82,10 +82,11 @@ const Section = styled.section`
 
     h4 {
       font-weight: bold;
+      color:white;
     }
 
     h6 {
-      color: grey;
+      color: white;
     }
   }
 

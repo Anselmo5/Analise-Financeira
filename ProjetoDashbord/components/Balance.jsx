@@ -189,7 +189,7 @@ const data = [
 
 const Section = styled.section`
 .sales{
-    color: black;
+    color:#fff;
     width: 100 %;
     .sales__details {
         display: flex;
@@ -207,7 +207,7 @@ const Section = styled.section`
         height: 10rem;
         width: 73vw;
         .recharts-default-tooltip {
-            background-color: white !important;
+            background-color: #fff;!important;
             border-color: white !important;
             color: bla !important;
         }
@@ -224,7 +224,7 @@ const Section = styled.section`
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: #fff;
+  background: #191919;
 
   /* Center slide text vertically */
   display: flex;

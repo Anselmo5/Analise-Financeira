@@ -94,7 +94,7 @@ const AnalyticSection = styled.section`
   .analytic-card {
     padding: 0.8rem;
     border-radius: 1rem;
-    color: black;
+    color:black;
     background-color: white;
     justify-content: space-evenly;
     align-items: center;

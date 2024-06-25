@@ -42,8 +42,8 @@ const Section = styled.section`
     transition: background-color 0.5s ease-in-out;
 
     &:hover {
-      background-color: #1E90FF; /* Alterei para um tom de azul mais claro */
-      color: black;
+      background-color: #781b77; /* Alterei para um tom de azul mais claro */
+      color: white;
     }
 
     .design {

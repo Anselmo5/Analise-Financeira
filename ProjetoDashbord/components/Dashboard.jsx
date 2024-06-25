@@ -19,7 +19,7 @@ margin-left: 5vw;
 margin-right: 14px;
 padding: 2rem;
 height: 60rem;
-background-color: #F5F5FD;
+background-color: #191919;
 .grid{ 
     margin-top: 0.5rem;
     z-index: 2;

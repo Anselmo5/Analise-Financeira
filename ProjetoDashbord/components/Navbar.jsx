@@ -25,17 +25,18 @@ const Nav1 = styled.nav`
   align-items: center; /* Adicionado para melhor alinhamento vertical */
   color: black;
   padding: 1rem; /* Adicionado para espaçamento interno */
-  background-color: #f0f0f0; /* Adicionado para um fundo diferente */
+  background-color:#771e76; /* Adicionado para um fundo diferente */
   width:72vw;
   border-radius:5px;
 
   .navbar-title {
     h1{
       margin: 0; /* Adicionado para remover margem padrão */
+      color:white;
     }
 
     h5{
-      color: grey;
+      color: white;
       margin: 0; /* Adicionado para remover margem padrão */
     }
   }

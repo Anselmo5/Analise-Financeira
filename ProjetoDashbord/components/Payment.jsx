@@ -52,10 +52,11 @@ const Section = styled.section`
 
     h4 {
       font-weight: bold;
+      color: white;
     }
 
     h6 {
-      color: grey;
+      color: white;
     }
   }
 
@@ -80,8 +81,7 @@ const Section = styled.section`
 
 
 &:hover {
-  background-color: #F5F5FD;
-  color: black;
+  color: white;
 }
 
 svg {

@@ -73,7 +73,7 @@ export default Sidebar;
 const Section = styled.section`
   position: fixed;
   left: 0;
-  background-color: #ECECF6;
+  background-color:#191919;
   height: 100vh;
   width: 6vw;
   display: flex;
@@ -119,10 +119,10 @@ const Section = styled.section`
         list-style-type: none;
 
         .active {
-          border-right: 0.2rem solid black;
+          border-right: 0.2rem solid white;
 
           a {
-            color: black;
+            color: white;
           }
         }
 
@@ -158,7 +158,7 @@ const Section = styled.section`
 
           &:hover {
             a {
-              color: black;
+              color: white;
             }
           }
         }
