@@ -1,8 +1,8 @@
-import metodos as mt
+import Metodo as mt
 
 
-grafico_margem_uf = mt.margem_uf()
-print(grafico_margem_uf)
+margem_uf = mt.margem_uf()
+print(margem_uf)
 
 descricao_margem_uf = mt.descricao_margem_35()
 print(descricao_margem_uf)
