@@ -1,4 +1,3 @@
-import React from 'react'
 import styled from 'styled-components'
 import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 import { Chart } from "react-google-charts";
@@ -6,6 +5,9 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { Pagination } from 'swiper/modules';
+import { useEffect } from 'react';
+import { useState } from 'react';
+// import axios from 'axios'
 
 export const data2 = [
   ["Year", "Sales", "Expenses", "Profit"],
@@ -47,7 +49,26 @@ export const optionsMap = {
 
 
 
+
+
 const Balance = () => {
+
+  // useEffect(async () => {
+  //   try {
+  //     const response = await axios.get('http://127.0.0.1:5000/');
+  //     setdatapi(response.data);
+  //     // Aqui você pode processar os dados recebidos, se necessário
+  //     console.log('Dados da API:', response.data);
+  //   } catch (error) {
+  //     console.error('Erro na requisição:', error);
+  //     // Trate o erro de acordo com a sua lógica
+  //   }
+  // }, []);
+
+  
+  // const [dataapi,setdatapi] = useState()
+  // const [optionsapi,setoptionsapi] = useState()
+
   return (
   
     <Section>
@@ -88,8 +109,8 @@ const Balance = () => {
 
 
 
-             
-            <Swiper pagination={true} modules={[Pagination]} className="mySwiper">
+           
+          <Swiper pagination={true} modules={[Pagination]} className="mySwiper">
              <SwiperSlide className="slidgrafico">
                 <Chart
                     chartType="AreaChart"
@@ -138,12 +159,11 @@ const Balance = () => {
                     height="400px"
                     options={options}
                   />
-             </SwiperSlide>
+             </SwiperSlide> 
 
 
 
-           </Swiper>
-
+            </Swiper> 
         </Section>
     )
 }
