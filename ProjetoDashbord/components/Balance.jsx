@@ -52,8 +52,8 @@ export const optionsMap = {
 
 
 const Balance = () => {
-
   const [dataapi, setdatapi] = useState(null);
+
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -150,19 +150,23 @@ const Balance = () => {
                   />
              </SwiperSlide>
 
-          {dataapi && dataapi.UF ? (
+        
               <SwiperSlide className="slidgrafico">
-                <Chart
-                  chartType="PieChart"
-                  data={dataapi.UF}
-                  width="72vw"
-                  height="400px"
-                  options={options}
-                />
+                      {dataapi ? (
+                        <Chart
+                          chartType="PieChart"
+                          data={dataapi}
+                          width="100%"
+                          height="400px"
+                          options={{
+                            title: 'Exemplo de gráfico com dados da API',
+                          }}
+                        />
+                      ) : (
+                        <p>Carregando dados...</p>
+                      )}
               </SwiperSlide>
-            ) : ( 
-             <p>Carregando dados...</p>
-      )}
+        
 
 
             </Swiper> 
