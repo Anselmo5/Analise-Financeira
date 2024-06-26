@@ -1,13 +1,16 @@
-from flask import Flask
+from flask import Flask,jsonify
 import App
+
 app = Flask(__name__)
 
 @app.route("/")
 
 def grafico_margem_uf():
+    print("Endpoint acessado")
     grafico_margem_uf = App.margem_uf
+    print("Dados retornados:", grafico_margem_uf)
+    return jsonify(grafico_margem_uf)
 
-    return grafico_margem_uf
 
 # def descricao_margem_uf():
 #     descricao_margem_uf = App.descricao_margem_35
