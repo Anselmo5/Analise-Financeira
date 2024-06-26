@@ -18,3 +18,5 @@ print(media_beneficio_uf)
 
 distribuicao_emprestimo_idade = mt.distribuicao_emprestimo_por_idade()
 print(distribuicao_emprestimo_idade)
+
+
