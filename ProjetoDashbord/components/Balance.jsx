@@ -7,7 +7,7 @@ import 'swiper/css/pagination';
 import { Pagination } from 'swiper/modules';
 import { useEffect } from 'react';
 import { useState } from 'react';
-// import axios from 'axios'
+import axios from 'axios'
 
 export const data2 = [
   ["Year", "Sales", "Expenses", "Profit"],
@@ -53,21 +53,20 @@ export const optionsMap = {
 
 const Balance = () => {
 
-  // useEffect(async () => {
-  //   try {
-  //     const response = await axios.get('http://127.0.0.1:5000/');
-  //     setdatapi(response.data);
-  //     // Aqui você pode processar os dados recebidos, se necessário
-  //     console.log('Dados da API:', response.data);
-  //   } catch (error) {
-  //     console.error('Erro na requisição:', error);
-  //     // Trate o erro de acordo com a sua lógica
-  //   }
-  // }, []);
+  const [dataapi, setdatapi] = useState(null);
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await axios.get('http://127.0.0.1:5000/');
+        setdatapi(response.data);
+        console.log('Dados da API:', response.data);
+      } catch (error) {
+        console.error('Erro na requisição:', error);
+      }
+    };
+    fetchData();
+  }, []);
 
-  
-  // const [dataapi,setdatapi] = useState()
-  // const [optionsapi,setoptionsapi] = useState()
 
   return (
   
@@ -151,16 +150,19 @@ const Balance = () => {
                   />
              </SwiperSlide>
 
-             <SwiperSlide className="slidgrafico">
+          {dataapi && dataapi.UF ? (
+              <SwiperSlide className="slidgrafico">
                 <Chart
-                    chartType="PieChart"
-                    data={data2}
-                    width="72vw"
-                    height="400px"
-                    options={options}
-                  />
-             </SwiperSlide> 
-
+                  chartType="PieChart"
+                  data={dataapi.UF}
+                  width="72vw"
+                  height="400px"
+                  options={options}
+                />
+              </SwiperSlide>
+            ) : ( 
+             <p>Carregando dados...</p>
+      )}
 
 
             </Swiper> 
