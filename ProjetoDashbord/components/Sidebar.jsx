@@ -57,7 +57,7 @@ const Sidebar = () => {
             <li className={currentLink === 6 ? "active" : ""}
               onClick={() => setCurrentLink(6)}
             >
-              <Link to='#'>
+              <Link to='http://localhost:8501' target='_blank'>
                 <AiOutlineDotChart/>
               </Link>
             </li>

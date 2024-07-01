@@ -52,13 +52,13 @@ export const optionsMap = {
 
 
 const Balance = () => {
-  const [dataapi, setdatapi] = useState(null);
+  const [dataApi, setDataApi] = useState(null);
 
   useEffect(() => {
     const fetchData = async () => {
       try {
         const response = await axios.get('http://127.0.0.1:5000/');
-        setdatapi(response.data);
+        setDataApi(response.data);
         console.log('Dados da API:', response.data);
       } catch (error) {
         console.error('Erro na requisição:', error);
@@ -66,7 +66,6 @@ const Balance = () => {
     };
     fetchData();
   }, []);
-
 
   return (
   
@@ -152,19 +151,25 @@ const Balance = () => {
 
         
               <SwiperSlide className="slidgrafico">
-                      {dataapi ? (
-                        <Chart
-                          chartType="PieChart"
-                          data={dataapi}
-                          width="100%"
-                          height="400px"
-                          options={{
-                            title: 'Exemplo de gráfico com dados da API',
-                          }}
-                        />
-                      ) : (
-                        <p>Carregando dados...</p>
-                      )}
+                  <Chart
+                    chartType="PieChart"
+                    data={data2}
+                    width="100%"
+                    height="400px"
+                    options={options}
+                  />
+
+              {/* {dataApi ? (
+                  <Chart
+                    chartType="PieChart"
+                    data={dataApi.UF}
+                    width="100%"
+                    height="400px"
+                    options={dataApi}
+                  />
+                ) : (
+                  <p>Carregando dados...</p>
+              )} */}
               </SwiperSlide>
         
 

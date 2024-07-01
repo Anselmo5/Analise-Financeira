@@ -107,13 +107,6 @@ const Home = () => {
                                 <h4>Henrique - Backend</h4>
                                 <p>Responsavel pela parte funcional do site</p>
                             </div>
-
-
-                            <div className="card">
-                                <img src={Avatar4} alt="" />
-                                <h4>Dudinha - Front End</h4>
-                                <p>Responsavel pela criação do websit</p>
-                            </div>
                         </div>
                     </div>
                 </section>
