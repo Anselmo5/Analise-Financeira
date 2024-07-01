@@ -2,10 +2,10 @@ import Metodo as mt
 
 
 margem_uf = mt.margem_uf()
-print(margem_uf)
+print(type(margem_uf))
 
 descricao_margem_uf = mt.descricao_margem_35()
-print(descricao_margem_uf)
+print(type(descricao_margem_uf))
 
 descricao_margem_idade = mt.descricao_margem_35_idade()
 print(descricao_margem_idade)
