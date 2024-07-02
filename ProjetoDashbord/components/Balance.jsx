@@ -49,8 +49,6 @@ export const optionsMap = {
 
 
 
-
-
 const Balance = () => {
   const [dataApi, setDataApi] = useState(null);
 
@@ -149,7 +147,7 @@ const Balance = () => {
                   />
              </SwiperSlide>
 
-        
+      
               <SwiperSlide className="slidgrafico">
                   <Chart
                     chartType="PieChart"
@@ -158,8 +156,8 @@ const Balance = () => {
                     height="400px"
                     options={options}
                   />
-
-              {/* {dataApi ? (
+{/* 
+              {dataApi ? (
                   <Chart
                     chartType="PieChart"
                     data={dataApi.UF}
