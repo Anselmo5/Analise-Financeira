@@ -56,30 +56,30 @@ def descricao_margem_35() -> pd.DataFrame:
     descricao_marger_uf.columns = ['QUANTIDADE', 'MEDIA', 'DESVIO PADRAO', 'MINIMO', 'Q1-25%', 'Q2-50%', 'Q3-75%', 'MAXIMO']
     descricao_marger_uf = descricao_marger_uf.reset_index()
     #descricao_marger_uf['QUANTIDADE'] = descricao_marger_uf['QUANTIDADE'].astype(int)
-    return descricao_marger_uf.to_json(index=False)
+    return descricao_marger_uf#.to_json(index=False)
 
 def descricao_margem_35_idade() -> pd.DataFrame:
     descricao_marger_idade = dados.groupby('IDADE')['MARGEM_35'].describe().round(2)
     descricao_marger_idade.columns = ['QUANTIDADE', 'MEDIA', 'DESVIO PADRAO', 'MINIMO', 'Q1-25%', 'Q2-50%', 'Q3-75%', 'MAXIMO']
     descricao_marger_idade = descricao_marger_idade.reset_index()
     #descricao_marger_uf['QUANTIDADE'] = descricao_marger_uf['QUANTIDADE'].astype(int)
-    return descricao_marger_idade.to_json(index=False)
+    return descricao_marger_idade#.to_json(index=False)
 
 
 def distribuicao_idade_por_uf() -> pd.DataFrame:
     distribuicao_idade_uf = dados.pivot_table(index='IDADE', columns='UF', aggfunc='size', fill_value=0)
     distribuicao_idade_uf = distribuicao_idade_uf.reset_index()
-    return distribuicao_idade_uf.to_json(index=False)
+    return distribuicao_idade_uf#.to_json(index=False)
 
 
 def media_beneficio_por_uf() -> pd.DataFrame:
     media_beneficio_uf = dados.groupby('UF')['VL_BENEFICIO'].mean().round(2).reset_index()
     media_beneficio_uf.columns = ['UF', 'MEDIA_BENEFICIO']
-    return media_beneficio_uf.to_json(index=False)
+    return media_beneficio_uf#.to_json(index=False)
 
 
 def distribuicao_emprestimo_por_idade() -> pd.DataFrame:
     distribuicao_emprestimo_idade = dados.groupby('IDADE')['VL_EMPRESTIMO'].describe().round(2)
     distribuicao_emprestimo_idade.columns = ['QUANTIDADE', 'MEDIA', 'DESVIO PADRAO', 'MINIMO', 'Q1-25%', 'Q2-50%', 'Q3-75%', 'MAXIMO']
     distribuicao_emprestimo_idade = distribuicao_emprestimo_idade.reset_index()  # Reseta o índice para incluir 'IDADE' como coluna
-    return distribuicao_emprestimo_idade.to_json(index=False)
+    return distribuicao_emprestimo_idade#.to_json(index=False)
