@@ -17,7 +17,7 @@ const Cadastro = () => {
     event.preventDefault();
 
     try {
-      const response = await axios.post('http://localhost:3003/create-user', {
+      const response = await axios.post('https://beckend-analise-financeira.onrender.com/create-user', {
         nome,
         email,
         senha,
