@@ -11,8 +11,8 @@ const secretKey ='you-secret-key';
 let users =[
       {
         id: 1,
-        name: 'Cezar',
-        email: 'Cezar@gmail.com',
+        name: 'Anselmo',
+        email: 'Anselmo@gmail.com',
         password: '123456',
         page:'/grafico',
       },
