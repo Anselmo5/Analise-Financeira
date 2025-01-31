@@ -9,10 +9,10 @@
 
 
 .container{
-  margin-top:25vh;
+  margin-top:22vh;
   background: #242424;
   width: 30vw;
-  height:50vh;
+  height:60vh;
   border-radius: 5px;
 
 }
@@ -104,7 +104,7 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    border-width: 0 0 35vh 100vw;
+    border-width: 0 0 21vh 100vw;
     border-style: solid;
     border-color: transparent transparent #242424 transparent;
 }
@@ -114,7 +114,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    border-width: 35vh 100vw 0 0;
+    border-width: 21vh 100vw 0 0;
     border-style: solid;
     border-color: #242424 transparent transparent transparent;
 }
@@ -140,21 +140,26 @@
 
 @media screen and (max-width:1200px) {
 
- .container{
-    padding: 5px;
-    width: 40vw;
-    height: 80vh;
-    margin-top: 82px;
- }
+  .container{
+        width: 40vw;
+        height: 70vh;
+        margin-top: 15vh;
+    }
+    
+    
+    
+  .group input{
+        width: 25vw;
+    }
 
  .efectlogin1{
     z-index: none;
     position: none;
     bottom: 0;
     left: 0;
-    border-width: none;
-    border-style: none;
-    border-color: none;
+    border-width: 0 0 21vh 100vw;
+    border-style: solid;
+    border-color: transparent transparent #242424 transparent;
  }
 
  .efectlogin2{
@@ -162,13 +167,11 @@
     position:none;
     top: 0;
     left: 0;
-    border-width: none;
-    border-style: none;
-    border-color: none;
+    border-width: 21vh 100vw 0 0;
+    border-style: solid;
+    border-color: #242424 transparent transparent transparent;
  }
 
- .group input{
-    width: 25vw;
- }
     
 }   
+

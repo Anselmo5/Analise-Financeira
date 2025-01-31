@@ -34,9 +34,9 @@ const Cadastro = () => {
   return (
     <div>
         <div className='aling'>
-          <div className='container'>
+          <div className='container2'>
             <div className="efectcadastro1"></div>
-                <div className='user'>
+                <div className='user2'>
                      <div className='form'>
                            {/* logo */}
                            <h2>Faça Login</h2>

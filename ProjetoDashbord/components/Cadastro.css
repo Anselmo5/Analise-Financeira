@@ -1,9 +1,56 @@
+
+.container2{
+   margin-top:12vh;
+   background: #242424;
+   width: 30vw;
+   height:75vh;
+   border-radius: 5px;
+ 
+ }
+ 
+ .user2{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 100%;
+     width: 100%;
+   
+ }
+ 
+ .user2 input{
+     width: 20vw;
+     padding: 10px;
+     margin: 5px;
+     border-radius:3px;
+     border: 1px solid #242424;
+     
+ }
+ 
+ .user2 button{
+     border-radius:3px;
+     padding: 10px;
+     width: 12vw;
+     color: #fff;
+     background-color: #242424;
+     border: 1px solid #fff;
+     transition: 1s all;
+ }
+ 
+ 
+ .user2 button:hover{
+     background-color: #fff;
+     border: 1px solid #242424;
+     color: #242424;
+ }
+ 
+
+
 .efectcadastro1{
     z-index: 10;
     position: absolute;
     bottom: 0;
     left: 0;
-    border-width: 0 0 30vh 100vw;
+    border-width: 0 0 15vh 100vw;
     border-style: solid;
     border-color: transparent transparent #242424 transparent;
 }
@@ -13,7 +60,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    border-width: 35vh 100vw 0 0;
+    border-width: 15vh 100vw 0 0;
     border-style: solid;
     border-color: #242424 transparent transparent transparent;
 }
@@ -22,30 +69,13 @@
 
 @media screen and (max-width:1200px) {
 
-    .container{
-       padding: 5px;
-       width: 40vw;
-       height: 50vh;
+    .container2{
+       width: 55vw;
+       height: 75vh;
     }
-   
-    .efectcadastro1{
-       z-index: none;
-       position: none;
-       bottom: 0;
-       left: 0;
-       border-width: none;
-       border-style: none;
-       border-color: none;
-    }
-   
-    .efectcadastro2{
-       z-index:none;
-       position:none;
-       top: 0;
-       left: 0;
-       border-width: none;
-       border-style: none;
-       border-color: none;
-    }
+
+    .user2 input{
+      width: 40vw;
+   }
        
    }   
