@@ -152,26 +152,97 @@
         width: 25vw;
     }
 
- .efectlogin1{
-    z-index: none;
-    position: none;
-    bottom: 0;
-    left: 0;
-    border-width: 0 0 21vh 100vw;
-    border-style: solid;
-    border-color: transparent transparent #242424 transparent;
- }
+
+
+    .efectlogin1{
+        z-index: 10;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        border-width: none;
+        border-style: none;
+        border-color: none;
+    }
+
 
  .efectlogin2{
     z-index:none;
     position:none;
     top: 0;
     left: 0;
-    border-width: 21vh 100vw 0 0;
-    border-style: solid;
-    border-color: #242424 transparent transparent transparent;
+    border-width:none;
+    border-style: none;
+    border-color:none;
  }
 
     
 }   
+
+
+@media (max-width:950px) {
+
+    .container2{
+        width: 55vw;
+        height: 62vh;
+        margin-top: 20vh;
+     }
+
+
+    .efectcadastro1{
+        z-index: 10;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        border-width: none;
+        border-style: none;
+        border-color: none;
+    }
+    
+    .efectcadastro2{
+        z-index: 10;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-width: none;
+        border-style: none;
+        border-color: none;
+    }
+}
+
+
+@media (max-width: 750px) {
+    .container{
+        width: 55vw;
+        height: 70vh;
+        margin-top: 15vh;
+    }
+
+    .group input{
+        width: 50vw;
+    }
+
+    .form button{
+        width: 50vw;
+    }
+ 
+}
+
+
+
+@media (max-width: 500px) {
+    .container{
+        width: 90vw;
+        height: 70vh;
+        margin-top: 15vh;
+    }
+
+    .group input{
+        width: 70vw;
+    }
+
+    .form button{
+        width: 70vw;
+    }
+ 
+}
 

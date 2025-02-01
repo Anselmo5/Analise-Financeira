@@ -79,3 +79,72 @@
    }
        
    }   
+
+
+@media (max-width:950px) {
+
+    .container2{
+        width: 55vw;
+        height: 62vh;
+        margin-top: 20vh;
+     }
+
+
+    .efectcadastro1{
+        z-index: 10;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        border-width: none;
+        border-style: none;
+        border-color: none;
+    }
+    
+    .efectcadastro2{
+        z-index: 10;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-width: none;
+        border-style: none;
+        border-color: none;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .container2{
+       width: 95vw;
+       height: 75vh;
+       margin-top: 15vh;
+    }
+
+    .group input{
+       width: 70vw;
+    }
+
+    .form button{
+        width:70vw;
+    }
+
+    .efectcadastro1{
+        z-index: 10;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        border-width: none;
+        border-style: none;
+        border-color: none;
+    }
+    
+    .efectcadastro2{
+        z-index: 10;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-width: none;
+        border-style: none;
+        border-color: none;
+    }
+ 
+}
