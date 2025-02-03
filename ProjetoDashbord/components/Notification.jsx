@@ -60,7 +60,7 @@ const Notification = () => {
 
               {/* activity */}
 
-              <section>
+              <section className='activity'>
                       <div className='activity-title'>
                         <h4>Atividades recentes</h4>
                         <h6>6 Jul 2024</h6>
@@ -125,7 +125,7 @@ const Notification = () => {
 
                     {/* payment */}
 
-                <section>
+                <section className='payment'>
                       <div className="payment-title">
                         <h4>Próximos Pagamentos</h4>
                         <h6>24 jun 2024</h6>
@@ -187,6 +187,8 @@ const Nav = styled.nav`
   color: white;
   transition: left 0.3s ease;
   padding-top: 60px;
+  padding: 25px;
+    overflow-y: auto;
 }
 
 .sidebar.open {
@@ -220,7 +222,7 @@ const Nav = styled.nav`
 /* Botão de fechar */
 .close-btn {
   position: absolute;
-  top: 10px;
+  top: 1px;
   right: 15px;
   font-size: 20px;
   background: none;

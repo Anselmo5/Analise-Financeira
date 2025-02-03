@@ -511,15 +511,20 @@ textarea {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
 
-  h4 {
-    font-weight: bold;
-    color: white;
-  }
+.activity-title h4 {
+  font-size: 0.7rem;
+  font-weight: bold;
+  color: white;
+}
 
-  h6 {
-    color: white;
-  }
+.activity-title h6 {
+  color: white;
+}
+
+.activity-title svg {
+  font-size: 1.5rem;
 }
 
 .activity-analytic {
@@ -560,22 +565,21 @@ textarea {
   height: 40px;
 }
 
-svg {
-  font-size: 1.5rem;
-}
 
 .activity-content {
   display: flex;
   flex-direction: column;
 
-  h5 {
-    margin: 0;
-  }
+}
+
+.activity-content h5 {
+  margin: 0;
+}
 
   .activity-color {
     color: grey;
   }
-}
+
 
 .activity-money h5 {
   margin: 0;
@@ -623,17 +627,22 @@ svg {
 
   .payment-title {
     margin-left: 15px;
+  }
 
-    h4 {
-      font-weight: bold;
-      color: white;
-      font-size: 1.2rem;
-    }
+  .payment-title h4 {
+    font-weight: bold;
+    color: white;
+    font-size: 0.7rem;
+  }
 
-    h6 {
+  .payment-title h6 {
       color: white;
-      font-size: 1rem;
-    }
+      font-size: 0.6rem;
+  }
+
+
+  .payment-analytic{
+    color: #22202b;
   }
 
   .payment-analytic {
@@ -645,30 +654,30 @@ svg {
     background-color: #f9f9f9;
     border-radius: 0.5rem;
     transition: background 0.3s ease-in-out;
+  }
 
-    &:hover {
-      background: #22202B;
-      color: white;
-    }
+  .payment-analytic:hover {
+    background: #22202b;
+    color: #fff;
   }
 
   .payment-design {
     display: flex;
     align-items: center;
     gap: 1rem;
+  }
 
-    .payment-log {
-      background-color: white;
-      border-radius: 1rem;
-      border: 1px solid white;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 0.5rem;
+  .payment-log {
+    background-color: white;
+    border-radius: 1rem;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
 
-      svg {
-        font-size: 1.5rem;
-      }
+    svg {
+      font-size: 1.5rem;
     }
   }
 
@@ -676,22 +685,16 @@ svg {
     display: flex;
     flex-direction: column;
     width: 100%;
-
-    h5 {
-      margin: 0;
-      font-size: 1rem;
-    }
+ }
 
     .payment-color {
       color: grey;
     }
-  }
+  
 
-  .payment-money {
-    h5 {
+  .payment-money h5 {
       margin: 0;
       font-size: 1rem;
-    }
   }
 
   /* Responsividade */
