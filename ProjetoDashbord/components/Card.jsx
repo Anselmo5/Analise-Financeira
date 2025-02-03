@@ -32,17 +32,20 @@ export default Card;
 
 const Section = styled.section`
   .shopping {
-    padding: 0.8rem;
+    padding: 1rem;
     border-radius: 1rem;
     color: white;
     background-color: #22202B;
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 0.8rem;
+    width: 100%;
+    max-width: 320px;
     transition: background-color 0.5s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 
     &:hover {
-      background-color: #781b77; /* Alterei para um tom de azul mais claro */
+      background-color: #781b77;
       color: white;
     }
 
@@ -58,37 +61,87 @@ const Section = styled.section`
     .number {
       display: flex;
       gap: 0.5rem;
+      justify-content: center;
 
       h6 {
-        font-size: 1rem;
+        font-size: 1.2rem;
+        letter-spacing: 2px;
       }
     }
 
-    .image img{
-      width:2.5rem;
-      height: 2.5rem;
-      margin-left:10rem;
-  }
-    .name {
+    .image {
       display: flex;
-      gap: 0.5rem;
+      justify-content: flex-end;
+
+      img {
+        width: 3rem;
+        height: 3rem;
+      }
     }
 
-    h6 {
-      font-size: 0.6rem;
+    .name {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.8rem;
     }
   }
 
   .profile {
     display: flex;
-    justify-content: space-between; /* Ajustei para space-between para espaçar os itens */
+    justify-content: space-between;
     align-items: center;
-    gap: 2rem;
     margin-top: 10px;
 
-    span,
     h6 {
-      color: white;
+      font-size: 0.9rem;
+    }
+
+    .t1 {
+      font-size: 0.8rem;
+      color: #bbb;
+    }
+  }
+
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .shopping {
+      max-width: 280px;
+      padding: 0.8rem;
+    }
+
+    .number h6 {
+      font-size: 1rem;
+    }
+
+    .image img {
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+
+    .profile {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .shopping {
+      max-width: 250px;
+    }
+
+    .number h6 {
+      font-size: 0.9rem;
+    }
+
+    .image img {
+      width: 2rem;
+      height: 2rem;
+    }
+
+    .profile {
+      flex-direction: column;
+      text-align: center;
+      gap: 5px;
     }
   }
 `;

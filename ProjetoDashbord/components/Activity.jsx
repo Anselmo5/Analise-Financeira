@@ -6,7 +6,7 @@ import { AiOutlineThunderbolt, AiOutlineWifi } from 'react-icons/ai';
 
 const Activity = () => {
   return (
-    <Section>
+    <Section className='activity'>
       <div className='activity-title'>
         <h4>Atividades recentes</h4>
         <h6>6 Jul 2024</h6>
@@ -75,14 +75,17 @@ export default Activity;
 
 const Section = styled.section`
   display: grid;
-  gap: 0.2rem;
+
 
   .activity-title {
     margin-left: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
     h4 {
       font-weight: bold;
-      color:white;
+      color: white;
     }
 
     h6 {
@@ -91,7 +94,7 @@ const Section = styled.section`
   }
 
   .activity-analytic {
-    padding: 0.3rem 0.8rem 0.3rem 1.2rem;
+    padding: 0.8rem;
     color: black;
     display: flex;
     justify-content: space-between;
@@ -101,57 +104,83 @@ const Section = styled.section`
     background-color: #f9f9f9;
     border-radius: 0.5rem;
     margin: 0.5rem 0;
+    max-width: 600px;
+    width: 100%;
   }
 
-  .activity-analytic:hover{
-    background:#22202B;
-    color:#fff;
+  .activity-analytic:hover {
+    background: #22202b;
+    color: #fff;
   }
-    &:hover {
-      color: black;
 
-      svg {
-        color: black;
-      }
+  .activity-design {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .activity-logo {
+    background-color: white;
+    border-radius: 50%;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    width: 40px;
+    height: 40px;
+  }
+
+  svg {
+    font-size: 1.5rem;
+  }
+
+  .activity-content {
+    display: flex;
+    flex-direction: column;
+
+    h5 {
+      margin: 0;
     }
 
-    .activity-design {
-      display: flex;
+    .activity-color {
+      color: grey;
+    }
+  }
+
+  .activity-money h5 {
+    margin: 0;
+  }
+
+  /* Responsividade */
+  @media (max-width: 768px) {
+  
+
+    .activity-title {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .activity-analytic {
+      flex-direction: column;
       align-items: center;
-      gap: 1rem;
+      text-align: center;
+      width: 100%;
     }
-      .activity-logo {
-        background-color: white;
-        border-radius: 1rem;
-        border: 1px solid white;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 0.5rem;
-      }
-        svg {
-          font-size: 1.5rem;
-        }
-      
+  }
 
-      .activity-content {
-        display: flex;
-        flex-direction: column;
-
-        h5 {
-          margin: 0;
-        }
-
-        .activity-color {
-          color: grey;
-        }
-      }
+  @media (max-width: 480px) {
+    .activity-analytic {
+      padding: 1rem;
     }
 
-    .activity-money {
-      h5 {
-        margin: 0;
-      }
+    .activity-logo {
+      width: 35px;
+      height: 35px;
+    }
+
+    svg {
+      font-size: 1.3rem;
     }
   }
 `;

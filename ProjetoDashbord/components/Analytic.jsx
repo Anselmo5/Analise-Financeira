@@ -88,54 +88,76 @@ export default Analytic;
 
 const AnalyticSection = styled.section`
   display: flex;
-
-  margin: 0 60px;
+  flex-wrap: wrap;  
 
   .analytic-card {
     padding: 0.8rem;
     border-radius: 1rem;
-    color:black;
+    color: black;
     background-color: white;
-    justify-content: space-evenly;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     transition: 0.5s ease-in-out;
     width: 170px;
-    margin: 1.2em;
+    max-width: 100%;
+    margin: 1em;
   }
 
-  .analytic-card:hover{
-    background:#22202B;
+  .analytic-card:hover {
+    background: #22202b;
   }
 
+  .analytic-design {
+    display: flex;
+    align-items: center;
+  }
 
-    .analytic-design {
-      display: flex;
-      align-items: center;
-    }
-      .analytic-logo {
-        background-color: white;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-        svg {
-          font-size: 2rem;
-        }
-      
-      .analytic-action {
-        margin-left: 0.5rem; 
-        svg {
-          font-size: 1.5rem;
-        }
-      }
-    }
+  .analytic-logo {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-    .analytic-transfer {
-      margin-top: 20px;
-      color: grey;
+  svg {
+    font-size: 2rem;
+  }
+
+  .analytic-action {
+    margin-left: 0.5rem;
+    svg {
+      font-size: 1.5rem;
     }
-    .analytic-money {
-      margin-top: 20px;
+  }
+
+  .analytic-transfer {
+    margin-top: 20px;
+    color: grey;
+    text-align: center;
+  }
+
+  .analytic-money {
+    margin-top: 20px;
+    font-weight: bold;
+  }
+
+  /* Responsividade */
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+
+    .analytic-card {
+      width: 100%;
+      max-width: 300px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .analytic-card {
+      width: 100%;
+      max-width: 250px;
     }
   }
 `;
+

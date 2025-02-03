@@ -10,9 +10,6 @@ const RightSidebar = () => {
     <Section>
       <div className="right-sidebar-grid">
         <Notification />
-        <Card />
-        <Activity />
-        <Payment />
       </div>
     </Section>
   );

@@ -4,7 +4,7 @@ import { BiHomeAlt, BiCar } from 'react-icons/bi';
 
 const Payment = () => {
   return (
-    <Section>
+    <Section className='payment'>
       <div className="payment-title">
         <h4>Próximos Pagamentos</h4>
         <h6>24 jun 2024</h6>
@@ -45,7 +45,8 @@ export default Payment;
 
 const Section = styled.section`
   display: grid;
-  gap: 0.2rem;
+  gap: 0.5rem;
+
 
   .payment-title {
     margin-left: 15px;
@@ -53,79 +54,113 @@ const Section = styled.section`
     h4 {
       font-weight: bold;
       color: white;
+      font-size: 1.2rem;
     }
 
     h6 {
       color: white;
+      font-size: 1rem;
     }
   }
 
   .payment-analytic {
-    padding: 0.3rem 0.8rem 0.3rem 1.2rem;
-    color: black;
+    padding: 0.8rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 1rem;
-    transition: 0.5s ease-in-out;
     background-color: #f9f9f9;
     border-radius: 0.5rem;
-    margin: 0.5rem 0;
+    transition: background 0.3s ease-in-out;
+
+    &:hover {
+      background: #22202B;
+      color: white;
+    }
   }
 
+  .payment-design {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 
-.payment-analytic:hover{
-  background:#22202B;
-  color:#fff;
-} 
-
-
-&:hover {
-  color: white;
-}
-
-svg {
-  color: black;
-}
-
-    .payment-design {
+    .payment-log {
+      background-color: white;
+      border-radius: 1rem;
+      border: 1px solid white;
       display: flex;
+      justify-content: center;
       align-items: center;
-      gap: 1rem;
+      padding: 0.5rem;
 
-      .payment-log {
-        background-color: white;
-        border-radius: 1rem;
-        border: 1px solid white;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 0.5rem;
-
-        svg {
-          font-size: 1.5rem;
-        }
+      svg {
+        font-size: 1.5rem;
       }
     }
+  }
 
-    .payment-content {
-      display: flex;
+  .payment-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    h5 {
+      margin: 0;
+      font-size: 1rem;
+    }
+
+    .payment-color {
+      color: grey;
+    }
+  }
+
+  .payment-money {
+    h5 {
+      margin: 0;
+      font-size: 1rem;
+    }
+  }
+
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .payment-analytic {
       flex-direction: column;
+      align-items: flex-start;
+      gap: 0.5rem;
+    }
 
-      h5 {
-        margin: 0;
-      }
-
-      .payment-color {
-        color: grey;
-      }
+    .payment-design {
+      gap: 0.5rem;
     }
 
     .payment-money {
-      h5 {
-        margin: 0;
-        float: right;
-      }
+      align-self: flex-end;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .payment-title {
+      text-align: center;
+      margin-left: 0;
+    }
+
+    .payment-analytic {
+      padding: 0.5rem;
+    }
+
+    .payment-design {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.3rem;
+    }
+
+    .payment-money {
+      align-self: flex-start;
+    }
+
+    h5 {
+      font-size: 0.9rem;
     }
   }
 `;
+  

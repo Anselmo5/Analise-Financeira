@@ -73,7 +73,7 @@ export default Sidebar;
 const Section = styled.section`
   position: fixed;
   left: 0;
-  background-color:#191919;
+  background-color: #191919;
   height: 100vh;
   width: 6vw;
   display: flex;
@@ -82,6 +82,7 @@ const Section = styled.section`
   justify-content: space-between;
   padding: 2rem 0;
   gap: 2rem;
+  transition: width 0.3s ease-in-out;
 
   .top {
     display: flex;
@@ -90,12 +91,11 @@ const Section = styled.section`
     width: 100%;
 
     .brand {
-      width: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
       gap: 0.8rem;
-      
+
       .color1 {
         color: red;
       }
@@ -163,6 +163,39 @@ const Section = styled.section`
           }
         }
       }
+    }
+  }
+
+  /* Responsividade */
+  @media (max-width: 1024px) {
+    width: 8vw;
+  }
+
+  @media (max-width: 768px) {
+    width: 12vw;
+
+    .top {
+      gap: 2rem;
+    }
+
+    .links ul li a {
+      font-size: 1.4rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    width: 15vw;
+
+    .top {
+      gap: 1.5rem;
+    }
+
+    .links ul li a {
+      font-size: 1.2rem;
+    }
+
+    .brand svg {
+      font-size: 0.6rem;
     }
   }
 `;
