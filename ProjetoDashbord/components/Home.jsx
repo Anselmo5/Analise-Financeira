@@ -92,21 +92,10 @@ const Home = () => {
 
                             <div className="card">
                                 <img src={Avatar1} alt="" />
-                                <h4>Anselmo - FrontEnd</h4>
-                                <p>Responsavel pela criação do websit</p>
+                                <h4>Anselmo - Full Stack</h4>
+                                <p>Responsavel pela criação do websit e pelas funcionalidades dele</p>
                             </div>
 
-                            <div className="card">
-                                <img src={Avatar3} alt="" />
-                                <h4>Cezar -Database</h4>
-                                <p>Responsavel pela criação do banco de dados</p>
-                            </div>
-
-                            <div className="card">
-                                <img src={Avatar2} alt="" />
-                                <h4>Henrique - Backend</h4>
-                                <p>Responsavel pela parte funcional do site</p>
-                            </div>
                         </div>
                     </div>
                 </section>
